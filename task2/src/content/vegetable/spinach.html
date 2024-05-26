@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spinach</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/src/about.css">
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .img-container {
+            flex: 0 0 auto;
+            max-width: 50%;
+        }
+
+        .img-container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .health {
+            flex: 0 0 auto;
+            max-width: 50%;
+        }
+
+        .content, .container {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🌱Organic Farming</h1>
+        <nav>
+            <ul class="nav-link">
+                <li><a href="/index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="/src/product.html">Product</a>
+                    <ul class="dropdown-content">
+                        <li><a href="/src/vegetable.html">Vegetables</a></li>
+                        <li><a href="/src/fruits.html">Fruits</a></li>
+                        <li><a href="/src/dairy.html">Dairy</a></li>
+                    </ul>
+                </li>
+                <li><a href="/src/contact.html">Contact</a></li>
+                <li><a href="/src/about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Spinach</h1>
+    <div class="content">
+        <h3>How to grow :</h3>
+        <ol>
+            <li><b>1. Choose Varieties</b>: Select organic spinach varieties like Bloomsdale, Giant Nobel, or Space.</li>
+            <li><b>2. Prepare Soil: </b>Ensure well-drained soil with a pH of 6.5-7.0, adding organic matter like compost or aged manure.</li>
+            <li><b>3. Sow Seeds:</b> Plant seeds 1/2 inch deep, spacing rows 12-18 inches apart, with seeds 3 inches apart within rows.</li>
+            <li><b>4. Thin Seedlings:</b> Thin to 6-8 inches apart once seedlings have two true leaves.</li>
+            <li><b>5. Watering:</b> Keep soil consistently moist but not waterlogged, watering deeply when the soil feels dry to the touch.</li>
+            <li><b>6. Fertilize:</b> Side dress with compost or a balanced organic fertilizer every 4-6 weeks.</li>
+            <li><b>7. Harvest:</b> Begin harvesting outer leaves when they reach a usable size, about 6-8 weeks after planting.</li>
+        </ol>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="img-container">
+            <img src="/src/picture/spinach.jpg" alt="Spinach Image">
+        </div>
+        <div class="health">
+            <h3>Health Benefits : </h3>
+            <p>Spinach is incredibly nutritious, packed with vitamins A, C, K, and minerals like iron, calcium, and magnesium. It promotes eye health, strengthens bones, boosts immunity, aids digestion, and supports heart health.</p>
+        </div>
+    </div>
+</body>
+</html>

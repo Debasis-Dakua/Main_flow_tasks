@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apples</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/src/about.css">
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .img-container {
+            flex: 0 0 auto;
+            max-width: 50%;
+        }
+
+        .img-container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .health {
+            flex: 0 0 auto;
+            max-width: 50%;
+        }
+
+        .content, .container {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🌱Organic Farming</h1>
+        <nav>
+            <ul class="nav-link">
+                <li><a href="/index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="/src/product.html">Product</a>
+                    <ul class="dropdown-content">
+                        <li><a href="/src/vegetable.html">Vegetables</a></li>
+                        <li><a href="/src/fruits.html">Fruits</a></li>
+                        <li><a href="/src/dairy.html">Dairy</a></li>
+                    </ul>
+                </li>
+                <li><a href="/src/contact.html">Contact</a></li>
+                <li><a href="/src/about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Apples</h1>
+    <div class="content">
+        <h3>How to grow :</h3>
+        <ol>
+            <li><b>1. Choose Varieties</b>: Select apple varieties suited for your climate and space, such as Fuji, Gala, or Granny Smith.</li>
+            <li><b>2. Planting:</b> Plant apple trees in well-drained, loamy soil with good air circulation and full sun exposure.</li>
+            <li><b>3. Spacing:</b> Space apple trees 15-25 feet apart, depending on the rootstock and expected size of the mature tree.</li>
+            <li><b>4. Watering:</b> Water newly planted trees regularly, aiming for 1-2 inches per week. Once established, water deeply every 10-14 days during dry spells.</li>
+            <li><b>5. Pruning:</b> Prune apple trees annually during dormancy to remove dead, diseased, or crossing branches and to shape the tree for optimal fruit production.</li>
+            <li><b>6. Fertilizing:</b> Fertilize apple trees in early spring with a balanced organic fertilizer or compost, avoiding excessive nitrogen which can promote vegetative growth over fruiting.</li>
+            <li><b>7. Pest and Disease Control:</b> Monitor for pests and diseases regularly, and use organic methods like neem oil or beneficial insects to control pests, and cultural practices to prevent diseases.</li>
+            <li><b>8. Harvest:</b> Harvest apples when they are fully ripe and have developed their characteristic color. Twist or gently lift the apple upward and give it a slight twist to detach it from the tree.</li>
+        </ol>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="img-container">
+            <img src="/src/picture/apples.jpg" alt="Apples Image">
+        </div>
+        <div class="health">
+            <h3>Health Benefits : </h3>
+            <p>Apples are rich in fiber, vitamins, and antioxidants. They promote heart health, aid digestion, support weight loss, and may reduce the risk of chronic diseases like diabetes and cancer.</p>
+        </div>
+    </div>
+</body>
+</html>

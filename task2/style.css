@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: linear-gradient(90deg, rgb(10, 39, 10), rgb(26, 25, 25));
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    flex-wrap: wrap;
+   
+}
+
+header h1 {
+    color: antiquewhite;
+    font-size: 1.5rem;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.nav-link li {
+    padding: 5px;
+}
+
+.nav-link a {
+    text-decoration: none;
+    background-color: rgb(11, 122, 50);
+    color: aliceblue;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: block;
+}
+
+.nav-link .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.nav-link .dropdown-content li {
+    width: 120px;
+}
+
+.nav-link .dropdown-content a{
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+}
+
+.nav-link .dropdown-content a:hover{
+    background-color: #f1f1f1;
+}
+
+.nav-link .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+.nav-link a:hover {
+    box-shadow: 0px 0px 20px rgb(118, 138, 17);
+}
+
+.over-lay {
+    background-image: url('img1.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.home-content {
+    color: azure;
+}
+
+.home-content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.home-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: rgb(9, 230, 57);
+    color:white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 15px;
+}
+.btn:hover {
+    background-color: darkolivegreen;
+    box-shadow: 0 4px 8px rgba(0, 0, 0,0.3) ;
+}
+@media (min-width: 600px) {
+    .home-content h1 {
+        font-size: 3rem;
+    }
+
+    .home-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: 10px 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .nav-link a {
+        padding: 10px 20px;
+    }
+
+    .home-content h1 {
+        font-size: 4rem;
+    }
+
+    .home-content h3 {
+        font-size: 2rem;
+    }
+}

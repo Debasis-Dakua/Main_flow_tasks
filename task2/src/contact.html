@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="about.css">
+    <style>
+    .contact-form {
+    
+    margin-top: 20px;
+    max-width: 400px;
+    background-color: #b7f7ef;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🌱Organic Farming</h1>
+        <nav>
+            <ul class="nav-link">
+                <li><a href="../index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="product.html">Product</a>
+                    <ul class="dropdown-content">
+                        <li><a href="vegetable.html">Vegetables</a></li>
+                        <li><a href="fruits.html">Fruits</a></li>
+                        <li><a href="dairy.html">Dairy</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="/src/about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h1>Contact Us</h1>
+    <p>Feel free to reach out to us for any inquiries or feedback. We'd love to hear from you!</p>
+    <div class="contact-info">
+        <p><strong>Email:</strong> dakuadebasis@gmail.com</p>
+        <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+        <p><strong>Address:</strong> 123 Organic Farm Way, ODISHA , INDIA</p>
+        
+    </div>
+
+    <form class="contact-form">
+        <h2>Send us a Message</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" onclick="sendMail()">Send</button>
+    </form>
+    <script>
+        function sendMail() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            const mailtoLink = `mailto:info@organicfarming.com?subject=Contact%20Form%20Submission&body=Name:%20${encodeURIComponent(name)}%0AEmail:%20${encodeURIComponent(email)}%0A%0AMessage:%0A${encodeURIComponent(message)}`;
+            
+            window.location.href = mailtoLink;
+        }
+    </script>
+</body>
+</html>
