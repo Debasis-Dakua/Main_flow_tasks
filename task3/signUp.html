@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signUp.css">
+    
+</head>
+<body>
+    <div class="container">
+    <h2>Sign Up Form</h2>
+    <form onsubmit="return validateAndStoreSignUpForm()">
+        <label for="signupUsername">Username:</label><br>
+        <input type="text" id="signupUsername" name="username"><br><br>
+        <label for="signupEmail">Email:</label><br>
+        <input type="text" id="signupEmail" name="email"><br><br>
+        <label for="signupPassword">Password:</label><br>
+        <input type="password" id="signupPassword" name="password"><br><br>
+        <label for="signupConfirmPassword">Confirm Password:</label><br>
+        <input type="password" id="signupConfirmPassword" name="confirmPassword"><br><br>
+        <input type="submit" value="Sign Up">
+    </form>
+</div>
+    <script src="signUp.js"></script>
+</body>
+</html>

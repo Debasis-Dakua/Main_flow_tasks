@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: url('background.png') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        .nav {
+            background-color: rgba(0, 123, 255, 0.8);
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: black;
+            width: 80%;
+            max-width: 800px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .footer {
+            background-color: rgba(0, 123, 255, 0.8);
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            margin-top: auto;
+        }
+        .content {
+            text-align: left;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo">My Website</div>
+        <div>
+            <a href="#profile">Profile</a>
+            <a href="#settings">Settings</a>
+            <a href="index.html">Logout</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>User Information</h2>
+        <div id="userInfo">
+            <p><strong>Hello:</strong> <span id="username"></span></p>
+            <p><strong>Wel come to our web site</strong> <span id="email"></span></p>
+        </div>
+    </div>
+    <footer class="footer">
+        &copy; 2024 My Website. All rights reserved.
+    </footer>
+
+   <script>
+
+
+        var loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+        
+        // Display the username
+        if (loggedInUser) {
+            document.getElementById('username').textContent = loggedInUser.username;
+        } else {
+            document.getElementById('username').textContent = 'Guest';
+        }
+   </script>
+</body>
+</html>
