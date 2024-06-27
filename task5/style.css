@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #333; /* Dark background color */
+  color: #fff; /* Light text color */
+}
+
+nav {
+  background-color: #222; /* Darker navigation background */
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fbf727;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.input-container {
+  margin-right: 10px;
+}
+
+#text {
+  height: 35px;
+  width: 300px;
+  border-radius: 5px;
+  padding: 0 10px;
+  border: 1px solid #aaa; /* Lighter border color */
+  background-color: #555; /* Darker input background */
+  color: #fff; /* Light text color */
+}
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#btn1 {
+  background-color: #4CAF50; /* Green button */
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  color: white;
+}
+
+#btn1:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+#btn2 {
+  background-color: #f44336; /* Red button */
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  color: white;
+}
+
+#btn2:hover {
+  background-color: #da190b; /* Darker red on hover */
+}
+
+.format {
+  background-color: #444; /* Darker card background */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin-left: 170px;
+  margin-right: 170px;
+}
+
+p {
+  color: #eee; /* Light text color */
+  margin: 0 auto;
+  flex: 1;
+}
+
+#edit {
+  background-color: #f39c12; /* Orange edit button */
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#del {
+  background-color: #da1313; /* Red delete button */
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#edit:hover {
+  background-color: #9ce544; /* Lighter green on hover */
+}
+
+#del:hover {
+  background-color: #f40c33; /* Lighter red on hover */
+}
